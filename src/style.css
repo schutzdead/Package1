@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: grey
+   
+}
+
+header{
+    display: grid;
+    grid-template: 1fr/ 1fr 5fr 1fr;
+    height: 4rem;
+    transition : background-color 1s;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.title{
+    display: flex;
+    font-size: 25px;
+    font-weight:900;
+    letter-spacing: 1rem ;
+    place-self: center center;
+}
+
+.container{
+    display: flex;
+    align-self: center;
+}
+
+.allTag{
+    display: flex;
+    font-size: 10px;
+    gap : 20px;
+    letter-spacing: 0.1rem ;
+
+}
+
+.container>ul>li{
+    cursor: pointer;
+    list-style-type : none;
+}
+
+.container>ul>li:hover{
+    text-underline-offset: 1.62rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+
+header:hover{
+    background-color: white;
+}
+
+.drop{
+    font-size: 12px;
+    place-self: center flex-end;
+    padding-right: 40px;
+}
+
+.drop > img {
+    height: auto;
+    width: 1.5rem;
+}
+
+.underHeader5{
+    height : 13rem;
+    font-size: 13px;
+    letter-spacing: 0.1rem ;
+    background-color: white;
+    display: grid;
+    grid-template: 1fr/ 1fr 5fr 1fr;
+    visibility: hidden;
+    opacity: 0;
+    transition : opacity 0.5s;
+}
+
+.underContainer{
+    color: grey;
+    grid-column: 2/3;
+    display:flex;
+    justify-content: center;
+    padding-top: 2rem;
+    gap:4rem;
+    line-height: 1.7rem;  
+}
+
+.underContainer>ul>li{
+    color:black;
+    cursor: pointer;
+    list-style-type : none;
+}
